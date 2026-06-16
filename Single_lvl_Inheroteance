@@ -1,0 +1,60 @@
+import java.util.Scanner;
+import java.util.*;
+
+//bass class -> parent class
+class car{
+
+    String color;
+    String car_name;
+
+}
+
+
+//sub class -> child class->deriveclass
+class car2 extends car{
+
+
+    public void printinfo(){
+        System.out.println(color);
+        System.out.println(car_name);
+    }
+
+}
+
+//single lvl inheritance
+//   |
+ //  \/
+
+class shape{
+    public void area(){
+        System.out.println("disply area ");
+    }
+}
+
+class Triangle extends shape{
+     public void area(int l,int h){
+         System.out.println((l*h)*1/2);
+
+     }
+}
+
+
+public class Main{
+    public static void main(String[] args)  {
+
+     car2 gari = new car2();
+
+     gari.color = "red";
+
+
+     gari.car_name = "rjjj";
+
+     gari.printinfo();
+
+     Triangle T = new Triangle();
+
+     T.area(4,2);
+
+
+    }
+}
